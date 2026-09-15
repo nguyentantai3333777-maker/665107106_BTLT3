@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #eef7fc;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 950px;
+    margin: 20px auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background-color: #83c5be;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header img {
+    border-radius: 4px;
+    background-color: #fff;
+    object-fit: contain;
+}
+
+header h1 {
+    font-size: 26px;
+    color: #003049;
+}
+
+/* Title sản phẩm */
+.page-title {
+    padding: 15px 25px 5px;
+    font-size: 20px;
+    color: #1d3557;
+    font-weight: bold;
+}
+
+/* Layout Grid */
+main {
+    padding: 20px 25px;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+.product-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.product-section h2 {
+    font-size: 20px;
+    color: #000;
+}
+
+.product-details {
+    display: flex;
+    gap: 20px;
+}
+
+.product-image img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    max-width: 220px;
+    height: auto;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.product-info p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Table CSS */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #333;
+}
+
+th, td {
+    border: 1px solid #70a1ff;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+thead tr {
+    background-color: #70a1ff;
+    color: #fff;
+}
+
+tbody th[scope="row"] {
+    background-color: #eccc68;
+    color: #333;
+    font-weight: normal;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f1f2f6;
+}
+
+/* Section Sản phẩm tương tự */
+.similar-section {
+    margin-top: 20px;
+    grid-column: 1 / -1;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.similar-section h2 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.similar-products-list {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+.similar-products-list li {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 32%;
+    background-color: #fafafa;
+}
+
+.similar-products-list img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.similar-info {
+    font-size: 12px;
+}
+
+.similar-info .name {
+    font-weight: bold;
+    color: #333;
+    display: block;
+}
+
+.similar-info .price {
+    color: #d63031;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+/* Aside Chính sách */
+aside {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 15px;
+    background-color: #fff;
+    height: fit-content;
+}
+
+aside h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+aside ul {
+    list-style: none;
+    font-size: 13px;
+}
+
+aside li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #444;
+}
+
+/* Footer */
+footer {
+    background-color: #003049;
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+footer address {
+    font-style: normal;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+footer address div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 11px;
+    color: #a8dadc;
+}
