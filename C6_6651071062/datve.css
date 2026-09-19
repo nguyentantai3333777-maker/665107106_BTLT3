@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #e3f2fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.brand-blue {
+  color: #0072bc;
+}
+
+.brand-orange {
+  color: #f37021;
+}
+
+.plane-icon {
+  color: #f37021;
+  font-size: 24px;
+}
+
+/* Card chính */
+.card {
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+/* CSS cho Fieldset bỏ viền mặc định */
+fieldset.section {
+  border: none;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.section-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+}
+
+/* Bố cục theo hàng */
+.row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.col.width-full {
+  flex: none;
+  width: 100%;
+}
+
+label {
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 13.5px;
+  outline: none;
+  background-color: #fff;
+}
+
+input:focus,
+select:focus {
+  border-color: #0072bc;
+}
+
+/* Định dạng phần ước tính */
+.result-box {
+  font-size: 14px;
+  color: #333;
+}
+
+output {
+  font-weight: bold;
+  color: #000;
+}
+
+.note {
+  font-size: 12px;
+  color: #777;
+  font-style: italic;
+}
+
+/* Định dạng phần bảo mật */
+.security-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.lock-icon {
+  font-size: 18px;
+}
+
+.security-text p {
+  font-size: 12.5px;
+  color: #555;
+  line-height: 1.4;
+}
+
+keygen {
+  display: none; /* Thẻ keygen đã bị deprecated trên trình duyệt hiện đại */
+}
+
+/* Nút Submit */
+.btn-container {
+  margin-top: 20px;
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: #f37021;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #e05d0e;
+}
